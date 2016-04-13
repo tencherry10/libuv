@@ -1,0 +1,23 @@
+{
+  "name": "libuv",
+  "version": "1.9.0",
+  "repo": "tencherry10/libuv",
+  "description": "libuv packaged for clib",
+  "keywords": ["libuv"],
+  "license": "BSD",
+  "prepare": "sh autogen.sh && ./configure && make",
+  "prepared_src": [
+    ".libs/libuv.so",
+    ".libs/libuv.so.1",
+    ".libs/libuv.so.1.0.0",
+    ".libs/libuv.a"
+  ],
+  "src": [ 
+    "include/uv-threadpool.h",
+    "include/uv-unix.h",
+    "include/uv-linux.h",
+    "include/uv-version.h",
+    "include/uv-errno.h",
+    "include/uv.h"  
+  ]
+}
